@@ -1,15 +1,20 @@
 const config = {
-  title: "Naresh Khatri | Full-Stack Developer",
+  title: "Ikbal Ardiansah | Programmer",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "Jelajahi portfolio IT, seorang programmer dan full-stack developer serba bisa yang passionate dalam menciptakan solusi digital yang praktis dan handal. Dari backend API dan manajemen server hingga aplikasi Flutter dan antarmuka React, saya mengubah masalah kompleks menjadi pengalaman yang lancar dan efisien. Temukan proyek-proyek terbaru saya serta eksperimen dengan Linux, Laravel, dan sistem embedded. Mari kita ciptakan sesuatu yang berdampak bersama!",
+
     short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+      "Temukan portfolio IT, seorang full-stack developer yang mengubah ide menjadi solusi digital praktis dan handal dengan keahlian backend, frontend, dan sistem embedded.",
   },
   keywords: [
-    "Naresh",
+    "Ikbal Ardiansah",
     "portfolio",
     "full-stack developer",
     "creative technologist",
+    "Programmer",
+    "Software Engineer",
+    "developer",
+    "digital solutions",
     "web development",
     "3D animations",
     "interactive websites",
@@ -23,12 +28,12 @@ const config = {
     "Spline",
     "Framer Motion",
   ],
-  author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
-  site: "https://nareshkhatri.site",
+  author: "Ikbal Ardiansah",
+  email: "ikbal.ardiansah29@gmail.com",
+  site: "https://ikbalardiansah.site",
 
   // for github stars button
-  githubUsername: "naresh-khatri",
+  githubUsername: "anuterbang",
   githubRepo: "3d-portfolio",
 
   get ogImg() {

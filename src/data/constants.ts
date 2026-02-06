@@ -21,10 +21,11 @@ export enum SkillNames {
   LINUX = "linux",
   DOCKER = "docker",
   NGINX = "nginx",
-  AWS = "aws",
-  GCP = "gcp",
-  VIM = "vim",
+  PHP = "php",
+  FLUTTER = "flutter",
+  LARABEL = "laravel",
   VERCEL = "vercel",
+  MYSQL = "mysql",
 }
 export type Skill = {
   id: number;
@@ -208,31 +209,32 @@ using use = useUsing("use")`,
     color: "#008000",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
   },
-  [SkillNames.AWS]: {
+  [SkillNames.FLUTTER]: {
     id: 22,
-    name: "aws",
-    label: "AWS",
+    name: "flutter",
+    label: "Flutter",
     shortDescription:
       "always extra, making everything more complicated, period! 🌐👨‍💻",
     color: "#ff9900",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
   },
-  [SkillNames.GCP]: {
+  [SkillNames.MYSQL]: {
     id: 25,
-    name: "gcp",
-    label: "Google Cloud",
+    name: "mysql",
+    label: "MySQL ",
     shortDescription:
       "cloud computing but make it Google vibes, living rent free! ☁️🔥",
     color: "#4285f4",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   },
-  [SkillNames.VIM]: {
+  [SkillNames.LARABEL]: {
     id: 23,
-    name: "vim",
-    label: "Vim",
-    shortDescription: "exit? In this economy? Ight, imma head out! 🚪🏃",
-    color: "#e34c26",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
+    name: "laravel",
+    label: "Laravel",
+    shortDescription:
+      "the PHP framework that makes web development a breeze! 🧁 Laravel is a PHP framework that makes web development a breeze!",
+    color: "#f74430",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
   },
   [SkillNames.VERCEL]: {
     id: 24,
@@ -242,6 +244,15 @@ using use = useUsing("use")`,
       "The triangle compony, helps you deploy and go touch grass! 🚀🌿",
     color: "#6cc24a",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
+  },
+  [SkillNames.PHP]: {
+    id: 25,
+    name: "php",
+    label: "PHP",
+    shortDescription:
+      "The triangle compony, helps you deploy and go touch grass! 🚀🌿",
+    color: "#6cc24a",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
   },
 };
 
@@ -258,48 +269,70 @@ export type Experience = {
 export const EXPERIENCE: Experience[] = [
   {
     id: 1,
-    startDate: "Dec 2024",
-    endDate: "Present",
-    title: "Full Stack Developer",
-    company: "OmniNexus Sdn Bhd",
+    startDate: "Oktober 2025",
+    endDate: "Sekarang",
+    title: "Programmer",
+    company: "PT Goshen Swara Indonesia",
     description: [
-      "Built a custom image editor from scratch, cutting $4.8k/year in SaaS costs.",
-      "Architected async job queues processing 1k+ AI tasks daily with bulletproof reliability.",
-      "Optimized media delivery pipeline, slashing asset load times by 40%.",
-      "Shipped high-impact features end-to-end from requirements to production.",
+      "Mendesain dan membangun API untuk komunikasi antara frontend dan backend.",
+      "Mengelola server Linux, termasuk konfigurasi Nginx, database MySQL/MongoDB, dan deployment.",
+      "Mengoptimalkan performa aplikasi dan pipeline media untuk pengalaman pengguna yang lebih cepat.",
+      "Menulis kode berkualitas, melakukan testing, dan deployment end-to-end.",
     ],
+
     skills: [
       SkillNames.NEXTJS,
       SkillNames.TS,
-      SkillNames.REACT,
+      SkillNames.EXPRESS,
       SkillNames.NODEJS,
       SkillNames.POSTGRES,
-      SkillNames.MONGODB,
+      SkillNames.FLUTTER,
       SkillNames.DOCKER,
-      SkillNames.GCP,
+      SkillNames.MYSQL,
+      SkillNames.PHP,
+      SkillNames.NGINX,
     ],
   },
   {
     id: 2,
-    startDate: "Apr 2022",
-    endDate: "Dec 2024",
-    title: "Freelance Full Stack Developer",
-    company: "Self-employed",
+    startDate: "Januari 2025",
+    endDate: "Mei 2025",
+    title: "Programmer",
+    company: "PT Alpha Mitra Sekuritas",
     description: [
-      "Transformed chaotic Excel sheets into polished internal tools for various clients.",
-      "Shipped dashboards and custom CMS platforms tailored to each client's workflow.",
-      "Automated repetitive processes, improving efficiency and reducing human error.",
-      "Focused on clean, maintainable code and interfaces that users actually enjoy.",
+      "Mengubah ide dan wireframe menjadi aplikasi mobile Flutter yang rapi dan mudah digunakan.",
+      "Membangun dashboard dan antarmuka kustom yang terintegrasi dengan backend Laravel sesuai alur kerja pengguna.",
+      "Mengotomatisasi proses di aplikasi untuk meningkatkan efisiensi dan mengurangi kesalahan manual.",
+      "Fokus pada kode yang bersih, mudah dipelihara, dan antarmuka yang menyenangkan bagi pengguna.",
     ],
     skills: [
       SkillNames.REACT,
-      SkillNames.VUE,
-      SkillNames.NODEJS,
-      SkillNames.EXPRESS,
-      SkillNames.MONGODB,
+      SkillNames.FLUTTER,
+      SkillNames.LARABEL,
+      SkillNames.FIREBASE,
       SkillNames.POSTGRES,
-      SkillNames.TAILWIND,
       SkillNames.WORDPRESS,
+    ],
+  },
+  {
+    id: 2,
+    startDate: "Juni 2022",
+    endDate: "Juli 2023",
+    title: "Web IT Developer",
+    company: "PT Portal Biz Nusantara",
+    description: [
+      "Membangun dan mengelola API backend untuk mendukung interaksi frontend.",
+      "Mengotomatisasi proses internal melalui web tools untuk meningkatkan efisiensi kerja.",
+      "Memastikan kode bersih, mudah dipelihara, dan antarmuka web intuitif bagi pengguna.",
+      "Mengoptimalkan performa website, termasuk waktu load dan pengiriman aset media.",
+      "Bekerja sama dengan tim untuk mengimplementasikan fitur end-to-end dari analisis kebutuhan hingga deployment.",
+    ],
+
+    skills: [
+      SkillNames.WORDPRESS,
+      SkillNames.NODEJS,
+      SkillNames.LINUX,
+      SkillNames.MONGODB,
     ],
   },
 ];
@@ -320,4 +353,3 @@ export const themeDisclaimers = {
     "Dark mode on! Finally, someone who understands true sophistication.",
   ],
 };
-

@@ -6,7 +6,7 @@ import {
   FaCss3,
   FaDocker,
   FaEnvelope,
-  FaGit,
+  FaLaravel,
   FaGithub,
   FaHtml5,
   FaLinkedin,
@@ -15,7 +15,6 @@ import {
   FaPhone,
   FaReact,
   FaVuejs,
-  FaYarn,
 } from "react-icons/fa6";
 import {
   RiFirebaseFill,
@@ -26,12 +25,14 @@ import {
 import {
   SiExpress,
   SiJavascript,
-  SiKubuntu,
-  SiPm2,
+  SiMysql,
+  SiWordpress,
   SiPrettier,
   SiTypescript,
   SiVercel,
   SiVscodium,
+  SiPhp,
+  SiFlutter,
 } from "react-icons/si";
 import { VscCode } from "react-icons/vsc";
 
@@ -43,8 +44,8 @@ import { TbTerminal2 } from "react-icons/tb";
 const CONTACT_LINKS = [
   {
     name: "Email",
-    content: "naresh.khatri2345@gmail",
-    href: "mailto:naresh.khatri2345@gmail.com",
+    content: "ikbalardiansah29@gmail.com",
+    href: "mailto:ikbalardiansah29@gmail.com",
     icon: <FaEnvelope height={"50px"} />,
   },
   {
@@ -55,14 +56,14 @@ const CONTACT_LINKS = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/naresh-khatri/",
-    content: "/naresh-khatri",
+    href: "https://www.linkedin.com/in/ikbal-ardiansah-b1168738b/",
+    content: "/ikbal-ardiansah-b1168738b",
     icon: <FaLinkedin height={"50px"} />,
   },
   {
     name: "GitHub",
-    href: "https://github.com/Naresh-Khatri",
-    content: "/naresh-khatri",
+    href: "https://github.com/anuterbang",
+    content: "/anuterbang",
     icon: <FaGithub height={"50px"} />,
   },
 ];
@@ -153,9 +154,9 @@ const TOOLS = [
     color: "#FFCA28",
   },
   {
-    name: "Git",
+    name: "Laravel",
     content: "Next.js is a React framework for production",
-    icon: <FaGit size={"50px"} color="#f05032" />,
+    icon: <FaLaravel size={"50px"} color="#f05032" />,
     color: "#f05032",
   },
   {
@@ -171,10 +172,10 @@ const TOOLS = [
     color: "#007acc",
   },
   {
-    name: "VIM",
+    name: "Wordpress",
     content: "Next.js is a React framework for production",
-    icon: <DiVim size={"50px"} color="#fff" />,
-    color: "#000000",
+    icon: <SiWordpress size={"50px"} color="#21759b" />,
+    color: "#21759b",
   },
   {
     name: "Prettier",
@@ -189,9 +190,9 @@ const TOOLS = [
     color: "#CB3837",
   },
   {
-    name: "Yarn",
+    name: "Flutter",
     content: "Next.js is a React framework for production",
-    icon: <FaYarn size={"50px"} color="#2C8EBB" />,
+    icon: <SiFlutter size={"50px"} color="#2C8EBB" />,
     color: "#2C8EBB",
   },
   {
@@ -207,11 +208,11 @@ const TOOLS = [
     color: "#000000",
   },
   {
-    name: "Kubuntu",
+    name: "PHP",
     content: "Next.js is a React framework for production",
     // give me correct color for  kubuntu
-    icon: <SiKubuntu size={"50px"} color="#0077C4" />,
-    color: "#000000",
+    icon: <SiPhp size={"50px"} color="#777BB4" />,
+    color: "#777BB4",
   },
   {
     name: "Terminal",
@@ -220,10 +221,10 @@ const TOOLS = [
     color: "#000000",
   },
   {
-    name: "AWS",
+    name: "MySQL",
     content: "Next.js is a React framework for production",
-    icon: <FaAws size={"50px"} color="#3f51b5" />,
-    color: "#000000",
+    icon: <SiMysql size={"50px"} color="#00758F" />,
+    color: "#00758F",
   },
 ];
 
@@ -287,18 +288,26 @@ function Page() {
           >
             <h1 className="text-3xl mb-10 lg:md-20">About me</h1>
             <p className="mb-10 text-roboto">
-              Hey there! I&apos;m Naresh, a Fullstack developer passionate about
-              creating meaningful digital experiences. With great in Web
-              development, I thrive on turning ideas into reality through coding
-              and design. My journey began with a fascination for technology and
-              a drive to make a positive impact.
+              Hai! Saya Ikbal Ardiansah, seorang programmer yang passionate dan
+              suka memecahkan masalah. Dari membuat backend API, mengelola
+              server, hingga menciptakan pengalaman frontend yang smooth, saya
+              senang mengubah tantangan kompleks menjadi solusi yang sederhana,
+              handal, dan mudah digunakan. Saya selalu penasaran dan senang
+              mencoba teknologi baru—mulai dari Linux, Flutter, React, Laravel,
+              hingga sistem embedded—dengan tujuan terus belajar dan berinovasi.
             </p>
+
             <p className="mb-10">
-              When I&apos;m not coding, you can find me [Your
-              Interests/Hobbies], exploring new technologies, or sipping coffee
-              while brainstorming my next project.
+              Saat sedang tidak coding, saya biasanya mengeksplor teknologi
+              baru, mencoba hal-hal praktis di Linux atau server, bereksperimen
+              dengan teknologi baru, atau menikmati secangkir kopi sambil
+              merancang ide project berikutnya.
             </p>
-            <h1 className="text-3xl mb-10 lg:md-20">Stuff I use</h1>
+
+            <h1 className="text-3xl mb-10 lg:md-20">
+              Tools & Tech yang Sering Saya Pakai
+            </h1>
+
             <div className="mb-5">
               {!toolsLoaded ? (
                 <p className="h-[100px]"></p>
