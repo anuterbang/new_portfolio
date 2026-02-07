@@ -1,12 +1,8 @@
-const footer: { title: string; href: string }[] = [
-  {
-    title: "Blog",
-    href: "/blogs",
-  },
-  {
-    title: "Newsletter",
-    href: "/news",
-  },
-];
+// const footer: { title: string; href: string }[] = [
+//   {
+//     title: "My CV",
+//     href: "/cv.pdf",
+//   },
+// ];
 
-export { footer };
+// export { footer };

@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import { File, Github, Linkedin } from "lucide-react";
+import { File, Github, Linkedin, Mail } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -11,7 +11,7 @@ import {
 import { usePreloader } from "../preloader";
 import { BlurIn, BoxReveal } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
-import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import { config } from "@/data/config";
 
 import SectionWrapper from "../ui/section-wrapper";
@@ -40,7 +40,7 @@ const HeroSection = () => {
                       "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
                     )}
                   >
-                    Hi, I am
+                    Hi, Saya
                     <br className="md:hidden" />
                   </p>
                 </BlurIn>
@@ -51,7 +51,7 @@ const HeroSection = () => {
                       <h1
                         className={cn(
                           "-ml-[6px] leading-none font-thin text-transparent text-slate-800 text-left",
-                          "font-thin text-7xl md:text-7xl lg:text-8xl xl:text-9xl",
+                          "font-thin text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl",
                           "cursor-default text-edge-outline font-display "
                         )}
                       >
@@ -76,7 +76,7 @@ const HeroSection = () => {
                       "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
                     )}
                   >
-                    A Full Stack Web Developer
+                    Seorang Fullstack Programmer
                   </p>
                 </BlurIn>
               </div>
@@ -91,7 +91,7 @@ const HeroSection = () => {
                   <BoxReveal delay={2} width="100%" >
                     <Button className="flex items-center gap-2 w-full">
                       <File size={24} />
-                      <p>Resume</p>
+                      <p>Lihat CV Saya</p>
                     </Button>
                   </BoxReveal>
                 </Link>
@@ -103,7 +103,7 @@ const HeroSection = () => {
                           variant={"outline"}
                           className="block w-full overflow-hidden"
                         >
-                          Hire Me
+                          Kontak
                         </Button>
                       </Link>
                     </TooltipTrigger>
@@ -113,11 +113,11 @@ const HeroSection = () => {
                   </Tooltip>
                   <div className="flex items-center h-full gap-2">
                     <Link
-                      href={config.social.twitter}
+                      href={`mailto:${config.email}`}
                       target="_blank"
                     >
                       <Button variant={"outline"}>
-                        <SiX size={24} />
+                        <Mail size={24} />
                       </Button>
                     </Link>
                     <Link

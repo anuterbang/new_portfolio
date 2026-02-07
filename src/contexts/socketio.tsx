@@ -85,7 +85,6 @@ const SocketContextProvider = ({ children }: { children: ReactNode }) => {
     });
 
     socket.on("warning", (data: { message: string }) => {
-      console.log(data)
       toast({
         variant: "destructive",
         title: "System Warning",
@@ -94,7 +93,6 @@ const SocketContextProvider = ({ children }: { children: ReactNode }) => {
     });
 
     socket.on("msg-delete", (data: { id: number }) => {
-      console.log(data)
       setMsgs((prev) => prev.filter((m) => Number(m.id) !== data.id));
     });
     return () => {

@@ -484,5 +484,38 @@ const projects: Project[] = [
       );
     },
   },
+  {
+    id: "kliknklik",
+    category: "KLIKNKLIK",
+    title: "KLIKNKLIK",
+    src: "/assets/projects-screenshots/the-booking-desk/landing.png",
+    screenshots: ["1.png"],
+    live: "https://www.kliknklik.com/",
+    github: "#",
+    skills: {
+      frontend: [PROJECT_SKILLS.html, PROJECT_SKILLS.css, PROJECT_SKILLS.js],
+      backend: [PROJECT_SKILLS.mysql, PROJECT_SKILLS.gac, PROJECT_SKILLS.php],
+    },
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            KliknKlik.com adalah platform e-commerce dan retail elektronik asal
+            Indonesia yang berfokus pada penjualan laptop, notebook, komputer,
+            dan gadget dari berbagai merek ternama. Berdiri sejak 2009 di
+            Jakarta, KliknKlik berkembang dari toko kecil menjadi salah satu
+            spesialis laptop terbesar di Indonesia, dengan ribuan produk dan
+            banyak cabang fisik di kota besar seperti Jakarta, Bogor, Bekasi,
+            dan Bandung
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <p className="font-mono mb-8 mt-8">
+           Selain online store, KliknKlik juga memiliki showroom fisik yang memungkinkan pelanggan melihat produk langsung sebelum membeli, sehingga menggabungkan pengalaman online dan offline shopping .
+          </p>
+          <SlideShow images={[`${BASE_PATH}/the-booking-desk/landing.png`]} />
+        </div>
+      );
+    },
+  },
 ];
 export default projects;
