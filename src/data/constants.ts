@@ -83,8 +83,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 6,
     name: "vue",
     label: "Vue",
-    shortDescription:
-      "frame front-end yang santai, enak aja! 🟢😌",
+    shortDescription: "frame front-end yang santai, enak aja! 🟢😌",
     color: "#41b883",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
   },
@@ -92,8 +91,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 7,
     name: "nextjs",
     label: "Next.js",
-    shortDescription:
-      "framework drama, tapi kita support! 👑📜",
+    shortDescription: "framework drama, tapi kita support! 👑📜",
     color: "#fff",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
   },
@@ -214,8 +212,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 22,
     name: "flutter",
     label: "Flutter",
-    shortDescription:
-      "selalu extra, bikin sesuatu jadi rumit, period! 🌐👨‍💻",
+    shortDescription: "selalu extra, bikin sesuatu jadi rumit, period! 🌐👨‍💻",
     color: "#ff9900",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
   },
@@ -223,8 +220,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 25,
     name: "mysql",
     label: "MySQL ",
-    shortDescription:
-      "database SQL yang solid, living rent free! ☁️🔥",
+    shortDescription: "database SQL yang solid, living rent free! ☁️🔥",
     color: "#4285f4",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   },
@@ -232,8 +228,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 23,
     name: "laravel",
     label: "Laravel",
-    shortDescription:
-      "framework PHP yang bikin web dev jadi mudah! 🧁🔥",
+    shortDescription: "framework PHP yang bikin web dev jadi mudah! 🧁🔥",
     color: "#f74430",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
   },
@@ -250,8 +245,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     id: 25,
     name: "php",
     label: "PHP",
-    shortDescription:
-      "bahasa backend yang legendaris, masih relevant! 🔧⚡",
+    shortDescription: "bahasa backend yang legendaris, masih relevant! 🔧⚡",
     color: "#6cc24a",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
   },
@@ -270,6 +264,37 @@ export type Experience = {
 export const EXPERIENCE: Experience[] = [
   {
     id: 1,
+    startDate: "Sekarang",
+    endDate: " ",
+    title: "Freelance Programmer",
+    company: "ikbal.site",
+    description: [
+      "Membangun website, web app, mobile app, atau software sesuai kebutuhan klien.",
+      "Mengembangkan frontend (UI/UX) dan/atau backend (API, database, server).",
+      "Membuat sistem yang scalable, secure, dan maintainable.",
+      "Mengumpulkan requirement dan memahami kebutuhan bisnis klien.",
+      "Menyusun estimasi waktu pengerjaan dan scope project."
+    ],
+
+    skills: [
+      SkillNames.NEXTJS,
+      SkillNames.TS,
+      SkillNames.EXPRESS,
+      SkillNames.NODEJS,
+      SkillNames.POSTGRES,
+      SkillNames.FLUTTER,
+      SkillNames.DOCKER,
+      SkillNames.MYSQL,
+      SkillNames.PHP,
+      SkillNames.FLUTTER,
+      SkillNames.LARABEL,
+      SkillNames.WORDPRESS,
+      SkillNames.REACT,
+      SkillNames.MYSQL,
+    ],
+  },
+  {
+    id: 2,
     startDate: "Oktober 2025",
     endDate: "Sekarang",
     title: "Programmer",
@@ -295,11 +320,11 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     startDate: "Januari 2025",
     endDate: "Mei 2025",
     title: "Programmer",
-    company: "PT Alpha Mitra Sekuritas",
+    company: "PT Paramitra Alpha Sekuritas",
     description: [
       "Mengubah ide dan wireframe menjadi aplikasi mobile Flutter yang rapi dan mudah digunakan.",
       "Membangun dashboard dan antarmuka kustom yang terintegrasi dengan backend Laravel sesuai alur kerja pengguna.",
@@ -316,7 +341,7 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     startDate: "Juni 2022",
     endDate: "Juli 2023",
     title: "Web IT Developer",

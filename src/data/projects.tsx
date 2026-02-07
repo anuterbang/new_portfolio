@@ -32,6 +32,7 @@ import {
   SiThreedotjs,
   SiTypescript,
   SiVuedotjs,
+  SiWordpress,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 const BASE_PATH = "/assets/projects-screenshots";
@@ -264,6 +265,18 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiPhp />,
   },
+  wordpress: {
+    title: "WordPress",
+    bg: "black",
+    fg: "white",
+    icon: <SiWordpress />,
+  },
+  nodejs: {
+    title: "Node.js",
+    bg: "black",
+    fg: "white",
+    icon: <RiNodejsFill />,
+  },
 };
 export type Project = {
   id: string;
@@ -281,8 +294,8 @@ const projects: Project[] = [
     id: "goshen-training",
     category: "Goshen Training",
     title: "Goshen Training",
-    src: "/assets/projects-screenshots/codingducks/landing.png",
-    screenshots: ["landing.png"],
+    src: "/assets/projects-screenshots/goshen-training/1 (2).png",
+    screenshots: ["1 (2).png"],
     skills: {
       frontend: [PROJECT_SKILLS.html, PROJECT_SKILLS.css, PROJECT_SKILLS.js],
       backend: [
@@ -321,8 +334,8 @@ const projects: Project[] = [
           </p>
           <SlideShow
             images={[
-              `${BASE_PATH}/codingducks/problems.png`,
-              `${BASE_PATH}/codingducks/problem.png`,
+              `${BASE_PATH}/goshen-training/1 (2).png`,
+              `${BASE_PATH}/goshen-training/1 (1).png`,
             ]}
           />
         </div>
@@ -333,8 +346,8 @@ const projects: Project[] = [
     id: "goshen-training-cms",
     category: "Goshen Training CMS",
     title: "Goshen Training CMS",
-    src: "/assets/projects-screenshots/couponluxury/landing.png",
-    screenshots: ["1.png", "2.png", "3.png", "4.png", "5.png"],
+    src: "/assets/projects-screenshots/goshen-training-cms/1 (2).png",
+    screenshots: ["1 (2).png"],
     live: "https://www.goshen.co.id/Goshen-Training-CMS/",
     github: "#",
     skills: {
@@ -362,7 +375,13 @@ const projects: Project[] = [
             peserta, sekaligus meningkatkan pengalaman peserta saat mengakses
             materi training.
           </p>
-          <SlideShow images={[`${BASE_PATH}/couponluxury/landing.png`]} />
+          <SlideShow
+            images={[
+              `${BASE_PATH}/goshen-training-cms/1 (2).png`,
+              `${BASE_PATH}/goshen-training-cms/1 (1).png`,
+              `${BASE_PATH}/goshen-training-cms/1 (3).png`,
+            ]}
+          />
           {/* <TypographyP className="my-4 mt-8">
           <strong>Misc:</strong>
           Hosted not one, not two, but THREE coding contests (Codemacha) during
@@ -380,8 +399,8 @@ const projects: Project[] = [
     id: "email-blast",
     category: "Email Blast Goshen",
     title: "Email Blast Goshen",
-    src: "/assets/projects-screenshots/the-booking-desk/landing.png",
-    screenshots: ["1.png"],
+    src: "/assets/projects-screenshots/goshen-blast-cms/1 (2).png",
+    screenshots: ["1 (2).png"],
     live: "https://www.goshen.co.id/Goshen-Email-Blast/",
     github: "#",
     skills: {
@@ -407,7 +426,13 @@ const projects: Project[] = [
             kegiatan pemasaran digital lewat kampanye email yang terjadwal dan
             terkontrol.
           </p>
-          <SlideShow images={[`${BASE_PATH}/the-booking-desk/landing.png`]} />
+          <SlideShow
+            images={[
+              `${BASE_PATH}/goshen-blast-cms/1 (2).png`,
+              `${BASE_PATH}/goshen-blast-cms/1 (1).png`,
+              `${BASE_PATH}/goshen-blast-cms/1 (3).png`,
+            ]}
+          />
         </div>
       );
     },
@@ -416,7 +441,7 @@ const projects: Project[] = [
     id: "tracking-service",
     category: "Goshen Tracking Service",
     title: " Goshen Tracking Service",
-    src: "/assets/projects-screenshots/the-booking-desk/landing.png",
+    src: "/assets/projects-screenshots/goshen-tracking-service/1.png",
     screenshots: ["1.png"],
     live: "https://www.goshen.co.id/Goshen-Tracking-Service/",
     github: "#",
@@ -428,22 +453,22 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Goshen Email Blast adalah portal login untuk sistem Email Blast yang
-            digunakan oleh PT Goshen Swara Indonesia sebagai alat internal untuk
-            mengelola pengiriman email massal. Halaman ini berfungsi sebagai
-            pintu akses dashboard email blast, di mana pengguna terotorisasi
-            (mis. admin atau tim marketing) dapat masuk untuk mengelola kampanye
-            email, daftar kontak, dan konten email yang akan dikirim ke
-            pelanggan atau audience tertentu.
+            Goshen Tracking Service adalah website layanan service, perbaikan,
+            dan maintenance perangkat tracking milik PT Goshen Swara Indonesia.
+            Platform ini dibuat untuk membantu pelanggan dalam melaporkan
+            kerusakan alat, mengajukan perbaikan, serta memantau proses service
+            perangkat secara lebih terstruktur dan efisien.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <p className="font-mono mb-8 mt-8">
-            Portal email blast ini membantu tim Goshen Swara Indonesia mengelola
-            komunikasi massal secara terstruktur dan aman, sekaligus mendukung
-            kegiatan pemasaran digital lewat kampanye email yang terjadwal dan
-            terkontrol.
+            Dari sisi fungsi bisnis, website ini membantu mempercepat proses
+            penanganan alat rusak, meningkatkan transparansi progres service,
+            serta mendukung efisiensi operasional tim teknis Goshen Swara
+            Indonesia. Platform ini menjadi jembatan antara pelanggan dan tim
+            internal untuk memastikan layanan service lebih rapi,
+            terdokumentasi, dan profesional.
           </p>
-          <SlideShow images={[`${BASE_PATH}/the-booking-desk/landing.png`]} />
+          <SlideShow images={[`${BASE_PATH}/goshen-tracking-service/1.png`]} />
         </div>
       );
     },
@@ -452,7 +477,7 @@ const projects: Project[] = [
     id: "alpha-fund",
     category: "Alpha Fund",
     title: "Alpha Fund",
-    src: "/assets/projects-screenshots/the-booking-desk/landing.png",
+    src: "/assets/projects-screenshots/alpha-fund/1.png",
     screenshots: ["1.png"],
     live: "https://www.alpha-fund.com/",
     github: "#",
@@ -464,22 +489,20 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Goshen Email Blast adalah portal login untuk sistem Email Blast yang
-            digunakan oleh PT Goshen Swara Indonesia sebagai alat internal untuk
-            mengelola pengiriman email massal. Halaman ini berfungsi sebagai
-            pintu akses dashboard email blast, di mana pengguna terotorisasi
-            (mis. admin atau tim marketing) dapat masuk untuk mengelola kampanye
-            email, daftar kontak, dan konten email yang akan dikirim ke
-            pelanggan atau audience tertentu.
+            Alpha Fund / Alpha Investasi dari PT Paramitra Alfa Sekuritas adalah
+            aplikasi investasi saham yang digunakan untuk membeli dan menjual
+            saham di Bursa Efek Indonesia (BEI), dengan fokus pada kemudahan,
+            biaya murah, dan edukasi investor.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <p className="font-mono mb-8 mt-8">
-            Portal email blast ini membantu tim Goshen Swara Indonesia mengelola
-            komunikasi massal secara terstruktur dan aman, sekaligus mendukung
-            kegiatan pemasaran digital lewat kampanye email yang terjadwal dan
-            terkontrol.
+            Alpha (sering disebut Alpha Investasi) adalah platform trading saham
+            online resmi dari PT Paramitra Alfa Sekuritas, sebuah perusahaan
+            sekuritas yang terdaftar di BEI dan diawasi OJK. Aplikasi ini
+            memungkinkan pengguna untuk berinvestasi saham kapan saja dan di
+            mana saja
           </p>
-          <SlideShow images={[`${BASE_PATH}/the-booking-desk/landing.png`]} />
+          <SlideShow images={[`${BASE_PATH}/alpha-fund/1.png`]} />
         </div>
       );
     },
@@ -488,13 +511,23 @@ const projects: Project[] = [
     id: "kliknklik",
     category: "KLIKNKLIK",
     title: "KLIKNKLIK",
-    src: "/assets/projects-screenshots/the-booking-desk/landing.png",
-    screenshots: ["1.png"],
+    src: "/assets/projects-screenshots/kliknklik/1 (2).png",
+    screenshots: ["1 (2).png"],
     live: "https://www.kliknklik.com/",
     github: "#",
     skills: {
-      frontend: [PROJECT_SKILLS.html, PROJECT_SKILLS.css, PROJECT_SKILLS.js],
-      backend: [PROJECT_SKILLS.mysql, PROJECT_SKILLS.gac, PROJECT_SKILLS.php],
+      frontend: [
+        PROJECT_SKILLS.html,
+        PROJECT_SKILLS.css,
+        PROJECT_SKILLS.js,
+        PROJECT_SKILLS.wordpress,
+      ],
+      backend: [
+        PROJECT_SKILLS.mysql,
+        PROJECT_SKILLS.gac,
+        PROJECT_SKILLS.php,
+        PROJECT_SKILLS.nodejs,
+      ],
     },
     get content() {
       return (
@@ -510,9 +543,17 @@ const projects: Project[] = [
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
           <p className="font-mono mb-8 mt-8">
-           Selain online store, KliknKlik juga memiliki showroom fisik yang memungkinkan pelanggan melihat produk langsung sebelum membeli, sehingga menggabungkan pengalaman online dan offline shopping .
+            Selain online store, KliknKlik juga memiliki showroom fisik yang
+            memungkinkan pelanggan melihat produk langsung sebelum membeli,
+            sehingga menggabungkan pengalaman online dan offline shopping .
           </p>
-          <SlideShow images={[`${BASE_PATH}/the-booking-desk/landing.png`]} />
+          <SlideShow
+            images={[
+              `${BASE_PATH}/kliknklik/1 (2).png`,
+              `${BASE_PATH}/kliknklik/1 (1).png`,
+              `${BASE_PATH}/kliknklik/1 (3).png`,
+            ]}
+          />
         </div>
       );
     },
