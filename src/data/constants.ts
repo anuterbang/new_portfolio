@@ -286,11 +286,10 @@ export const EXPERIENCE: Experience[] = [
       SkillNames.DOCKER,
       SkillNames.MYSQL,
       SkillNames.PHP,
-      SkillNames.FLUTTER,
       SkillNames.LARABEL,
       SkillNames.WORDPRESS,
       SkillNames.REACT,
-      SkillNames.MYSQL,
+      SkillNames.LINUX
     ],
   },
   {
